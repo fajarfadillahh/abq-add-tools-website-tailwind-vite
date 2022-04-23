@@ -21,7 +21,7 @@
 
   /* button class */
   .button {
-    @apply flex justify-center items-center py-4 px-8 h-[58px] text-[15px] text-white font-medium;
+    @apply flex justify-center items-center py-4 px-8 h-[54px] text-[15px] text-white font-medium;
   }
   .button-purple {
     @apply bg-purple;
@@ -29,4 +29,23 @@
   .button-black {
     @apply bg-black;
   }
+}
+
+/* ===== HEADER SECTION ===== */
+@media screen and (max-width: 767px) {
+  .header__menu {
+    @apply fixed w-[80%] h-full top-0 -right-full grid grid-rows-[repeat(2,_max-content)] gap-12 bg-white shadow-[-2px_0_12px_rgba(0,0,0,0.1)] py-8 transition-all duration-400;
+  }
+}
+.header__menu.show-menu {
+  @apply right-0;
+}
+.header__link {
+  @apply flex items-center pl-8 min-h-[48px] bg-transparent text-[15px] text-black;
+}
+.header__link.active-link {
+  @apply relative font-medium text-purple bg-[rgba(0,0,0,0.05)];
+}
+.header__link.active-link::before {
+  @apply absolute content-[""] w-[2px] h-full top-0 left-0 bg-purple;
 }

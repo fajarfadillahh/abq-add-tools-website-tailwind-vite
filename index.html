@@ -23,6 +23,79 @@
     />
   </head>
   <body class="font-body font-reguler">
+    <!-- ===== HEADER SECTION ===== -->
+    <header
+      class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-400"
+      id="header"
+    >
+      <div
+        class="header__container container h-24 flex justify-between items-center"
+      >
+        <a
+          href="#"
+          class="header__logo inline-flex items-center gap-1 text-[20px] text-purple font-bold"
+        >
+          <img src="./src/img/logo.svg" alt="" class="header__logo-icon w-8" />
+          ABQ.
+        </a>
+
+        <div class="header__menu" id="header-menu">
+          <div class="header__data flex justify-between items-center ml-8 mr-6">
+            <a
+              href="#"
+              class="header__logo inline-flex items-center gap-1 text-[20px] text-purple font-bold"
+            >
+              <img
+                src="./src/img/logo.svg"
+                alt=""
+                class="header__logo-icon w-8"
+              />
+              ABQ.
+            </a>
+
+            <div
+              class="header__close inline-flex text-[1.5rem] text-black cursor-pointer"
+              id="header-close"
+            >
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+
+          <ul class="header__list flex flex-col">
+            <li class="header__item">
+              <a href="#" class="header__link active-link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Feature</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Templates</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Learn</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Pricing</a>
+            </li>
+          </ul>
+
+          <a
+            href="#"
+            class="header__button button button-black self-end ml-8 mr-6"
+            >Register</a
+          >
+        </div>
+
+        <div
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          id="header-toggle"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===== HEADER SECTION ===== -->
+
     <!-- ===== SWIPER JS ===== -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
