@@ -10,7 +10,7 @@
 @layer components {
   /* section class */
   .section {
-    @apply py-4 px-8;
+    @apply pt-32 pb-16;
   }
   .section-title {
     @apply text-[32px] text-black font-semibold leading-title mb-4;
@@ -27,7 +27,7 @@
     @apply bg-purple;
   }
   .button-black {
-    @apply bg-black;
+    @apply text-black flex items-center gap-2;
   }
 }
 
