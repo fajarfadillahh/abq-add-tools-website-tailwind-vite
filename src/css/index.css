@@ -2,3 +2,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ===== FONT GOOGLE ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* ===== REUSABLE CSS CLASS ===== */
+@layer components {
+  /* section class */
+  .section {
+    @apply py-4 px-8;
+  }
+  .section-title {
+    @apply text-[32px] text-black font-semibold leading-title mb-4;
+  }
+  .section-text {
+    @apply text-[15px] text-grey leading-text mb-8;
+  }
+
+  /* button class */
+  .button {
+    @apply flex justify-center items-center py-4 px-8 h-[58px] text-[15px] text-white font-medium;
+  }
+  .button-purple {
+    @apply bg-purple;
+  }
+  .button-black {
+    @apply bg-black;
+  }
+}
