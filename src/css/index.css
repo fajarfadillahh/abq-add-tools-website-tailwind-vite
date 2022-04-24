@@ -130,3 +130,30 @@
 .plan__item-check {
   @apply text-[1.5rem] text-purple;
 }
+
+/* ===== ACCPRDION SECTION ===== */
+.faq__accordion-item {
+  @apply py-4 border-b-[1px] border-solid border-[rgba(0,0,0,0.2)] transition-all duration-400;
+}
+.faq__accordion-header {
+  @apply flex justify-between items-center py-4 gap-4 cursor-pointer transition-all duration-400;
+}
+.faq__accordion-title {
+  @apply text-[18px] text-black font-semibold leading-title transition-all duration-400;
+}
+.faq__accordion-plus {
+  @apply inline-flex p-1 bg-black rounded-full text-[1rem] text-white transition-all duration-400;
+}
+.faq__accordion-content {
+  @apply overflow-hidden h-0 transition-all duration-400;
+}
+.faq__accordion-text {
+  @apply text-[15px] text-grey leading-text py-4 transition-all duration-400;
+}
+/* accordion open */
+.faq .accordion-open .faq__accordion-title {
+  @apply text-purple;
+}
+.faq .accordion-open .faq__accordion-plus {
+  @apply bg-purple rotate-45;
+}
