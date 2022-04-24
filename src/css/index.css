@@ -49,3 +49,45 @@
 .header__link.active-link::before {
   @apply absolute content-[""] w-[2px] h-full top-0 left-0 bg-purple;
 }
+
+/* ===== FEATURE SECTION ===== */
+.feature__item {
+  @apply grid gap-12;
+}
+.feature__item-data {
+  @apply text-center;
+}
+.feature__item-img {
+  @apply justify-self-center;
+}
+
+/* ===== TESTIMONIAL SECTION ===== */
+.testimonial__content {
+  @apply grid gap-8 py-8;
+}
+.testimonial__content-text {
+  @apply text-[15px] text-grey text-center leading-text;
+}
+.testimonial__content-profile {
+  @apply inline-flex items-center gap-3 justify-self-center;
+}
+.testimonial__content-img {
+  @apply w-16;
+}
+.testimonial__content-name {
+  @apply text-[18px] text-black font-semibold mb-1;
+}
+.testimonial__content-profession {
+  @apply text-[15px] text-grey;
+}
+/* testimonial swiper */
+.swiper-pagination {
+  position: initial;
+  margin-top: 1rem;
+}
+.swiper-pagination-bullet {
+  @apply w-2 h-2 bg-[rgba(0,0,0,0.2)] opacity-100;
+}
+.swiper-pagination-bullet-active {
+  @apply w-8 h-2 bg-purple rounded-lg;
+}

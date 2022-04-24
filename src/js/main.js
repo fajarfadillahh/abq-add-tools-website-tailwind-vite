@@ -16,3 +16,20 @@ function showMenu(menuId, toggleId, closeId) {
   }
 }
 showMenu("header-menu", "header-toggle", "header-close");
+
+// ===== TESTIMONIAL SWIPER =====
+let testimonialSwiper = new Swiper(".testimonial__swiper", {
+  centeredSlides: true,
+  slidesPerView: "auto",
+  spaceBetween: 36,
+  loop: true,
+  autoplay: {
+    duration: 3000,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
