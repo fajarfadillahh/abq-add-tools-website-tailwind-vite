@@ -157,3 +157,14 @@
 .faq .accordion-open .faq__accordion-plus {
   @apply bg-purple rotate-45;
 }
+
+/* ===== FOOTER SECTION ===== */
+.footer__content-title {
+  @apply text-[20px] text-black font-semibold mb-4;
+}
+.footer__content-list {
+  @apply flex flex-col gap-2;
+}
+.footer__content-link {
+  @apply text-[15px] text-grey hover:text-purple hover:underline;
+}
