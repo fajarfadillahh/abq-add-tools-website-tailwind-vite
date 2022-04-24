@@ -91,3 +91,42 @@
 .swiper-pagination-bullet-active {
   @apply w-8 h-2 bg-purple rounded-lg;
 }
+
+/* ===== PLAN SECTION ===== */
+.plan__switcher {
+  @apply mt-4 inline-flex items-center gap-3 p-2 bg-[rgba(0,0,0,0.05)] rounded-[10rem];
+}
+.plan__switcher-monthly,
+.plan__switcher-annual {
+  @apply py-2 px-4 text-[15px] font-medium rounded-[10rem];
+}
+.plan__switcher-annual {
+  @apply bg-black text-white;
+}
+.plan__item {
+  @apply grid grid-rows-[repeat(2,_max-content)] gap-8 w-[300px] py-10 px-6 ring-1 ring-[rgba(0,0,0,0.1)] transition-all duration-400;
+}
+.plan__item:hover {
+  @apply ring-transparent bg-white shadow-[0_4px_12px_rgba(0,0,0,0.1)];
+}
+.plan__item-title {
+  @apply text-[24px] text-black font-semibold mb-2;
+}
+.plan__item-text {
+  @apply text-[15px] text-grey leading-text;
+}
+.plan__item-prices {
+  @apply inline-flex items-center gap-2 mb-3 text-[15px] text-grey;
+}
+.plan__item-price {
+  @apply text-[36px] text-black font-semibold;
+}
+.plan__item-list {
+  @apply flex flex-col gap-2;
+}
+.plan__item-item {
+  @apply inline-flex items-center gap-2 text-[15px] text-grey;
+}
+.plan__item-check {
+  @apply text-[1.5rem] text-purple;
+}
