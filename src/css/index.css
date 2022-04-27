@@ -49,6 +49,9 @@
 .header__link.active-link::before {
   @apply absolute content-[""] w-[2px] h-full top-0 left-0 bg-purple;
 }
+.header.sticky-header {
+  @apply shadow-[0_2px_12px_rgba(0,0,0,0.1)];
+}
 
 /* ===== FEATURE SECTION ===== */
 .feature__item {
