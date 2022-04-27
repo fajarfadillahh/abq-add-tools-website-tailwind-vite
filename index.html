@@ -106,21 +106,23 @@
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
       <section class="home section">
-        <div class="home__container container grid gap-12">
+        <div
+          class="home__container container grid gap-12 xl:grid-cols-2 xl:items-center xl:gap-4"
+        >
           <div
-            class="home__data text-center xs:w-[400px] xs:justify-self-center sm:w-[450px] lg:w-[550px]"
+            class="home__data text-center xs:w-[400px] xs:justify-self-center sm:w-[450px] lg:w-[550px] xl:w-auto xl:text-left"
           >
             <h1
-              class="home__title section-title xs:text-[38px] sm:text-[42px] lg:text-[48px]"
+              class="home__title section-title xs:text-[38px] sm:text-[42px] lg:text-[48px] xl:text-[68px]"
             >
               Create ads for your business in minutes.
             </h1>
-            <p class="home__text section-text">
+            <p class="home__text section-text xl:w-[420px]">
               Our services give you the opportunity to craft a custom banner ad
               for Google Adwords, the advertising sites.
             </p>
             <div
-              class="home__button flex flex-col gap-3 sm:inline-flex sm:justify-self-center lg:flex-row"
+              class="home__button flex flex-col gap-3 sm:inline-flex sm:justify-self-center lg:flex-row xl:justify-self-start"
             >
               <a href="#" class="home__button-create button button-purple"
                 >Create your ad now</a
@@ -138,7 +140,7 @@
           <img
             src="./src/img/home-img.png"
             alt=""
-            class="home__img xs:w-[400px] xs:justify-self-center sm:w-[450px] lg:w-[550px]"
+            class="home__img xs:w-[400px] xs:justify-self-center sm:w-[450px] lg:w-[550px] xl:w-auto"
           />
         </div>
       </section>
@@ -327,7 +329,7 @@
           </div>
 
           <div
-            class="plan__group grid justify-center gap-12 md:grid-cols-[repeat(2,_max-content)]"
+            class="plan__group grid justify-center gap-12 md:grid-cols-[repeat(2,_max-content)] xl:grid-cols-[repeat(3,_max-content)]"
           >
             <div class="plan__item">
               <div>
@@ -583,7 +585,9 @@
     <!-- ===== FOOTER SECTION ===== -->
     <footer class="footer section">
       <div class="footer__container container grid gap-16">
-        <div class="footer__group grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="footer__group grid gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
           <div class="footer__data">
             <a
               href="#"
@@ -604,7 +608,7 @@
             </p>
           </div>
 
-          <div class="footer__content">
+          <div class="footer__content xl:justify-self-center">
             <h3 class="footer__content-title">Resources</h3>
 
             <ul class="footer__content-list">
@@ -623,7 +627,7 @@
             </ul>
           </div>
 
-          <div class="footer__content">
+          <div class="footer__content xl:justify-self-center">
             <h3 class="footer__content-title">Design Online</h3>
 
             <ul class="footer__content-list">
@@ -642,7 +646,7 @@
             </ul>
           </div>
 
-          <div class="footer__content">
+          <div class="footer__content xl:justify-self-center">
             <h3 class="footer__content-title">Tools</h3>
 
             <ul class="footer__content-list">
