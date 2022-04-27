@@ -58,10 +58,10 @@
   @apply grid gap-12;
 }
 .feature__item-data {
-  @apply text-center;
+  @apply text-center xs:w-[400px] xs:justify-self-center;
 }
 .feature__item-img {
-  @apply justify-self-center;
+  @apply justify-self-center xs:w-[400px];
 }
 
 /* ===== TESTIMONIAL SECTION ===== */
