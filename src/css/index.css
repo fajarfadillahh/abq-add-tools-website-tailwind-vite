@@ -131,7 +131,7 @@
   @apply text-[1.5rem] text-purple;
 }
 
-/* ===== ACCPRDION SECTION ===== */
+/* ===== ACCORDION SECTION ===== */
 .faq__accordion-item {
   @apply py-4 border-b-[1px] border-solid border-[rgba(0,0,0,0.2)] transition-all duration-400;
 }
@@ -167,4 +167,9 @@
 }
 .footer__content-link {
   @apply text-[15px] text-grey hover:text-purple hover:underline;
+}
+
+/* ===== SECTION SECTION ===== */
+.scrollup.scroll-action {
+  @apply opacity-100;
 }

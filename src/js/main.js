@@ -17,6 +17,18 @@ function showMenu(menuId, toggleId, closeId) {
 }
 showMenu("header-menu", "header-toggle", "header-close");
 
+// ===== SCROLLUP SECTION =====
+const scrollY = window.pageYOffset;
+
+function scrollUp() {
+  const scrollup = document.getElementById("scroll-up");
+
+  this.scrollY > 150
+    ? scrollup.classList.add("scroll-action")
+    : scrollup.classList.remove("scroll-action");
+}
+window.addEventListener("scroll", scrollUp);
+
 // ===== TESTIMONIAL SWIPER =====
 let testimonialSwiper = new Swiper(".testimonial__swiper", {
   centeredSlides: true,
