@@ -13,15 +13,15 @@
     @apply pt-32 pb-16;
   }
   .section-title {
-    @apply text-[32px] text-black font-semibold leading-title mb-4;
+    @apply text-[32px] text-black font-semibold leading-title mb-4 md:text-[36px];
   }
   .section-text {
-    @apply text-[15px] text-grey leading-text mb-8;
+    @apply text-[15px] text-grey leading-text mb-8 md:text-[16px];
   }
 
   /* button class */
   .button {
-    @apply flex justify-center items-center py-4 px-8 h-[54px] text-[15px] text-white font-medium;
+    @apply flex justify-center items-center py-4 px-8 h-[54px] text-[15px] text-white font-medium md:text-[16px];
   }
   .button-purple {
     @apply bg-purple;
@@ -38,16 +38,16 @@
   }
 }
 .header__menu.show-menu {
-  @apply right-0;
+  @apply right-0 md:flex md:items-center md:gap-6;
 }
 .header__link {
-  @apply flex items-center pl-8 min-h-[48px] bg-transparent text-[15px] text-black;
+  @apply flex items-center pl-8 min-h-[48px] bg-transparent text-[15px] text-black md:pl-0 md:min-h-0 md:text-[16px];
 }
 .header__link.active-link {
-  @apply relative font-medium text-purple bg-[rgba(0,0,0,0.05)];
+  @apply relative font-medium text-purple bg-[rgba(0,0,0,0.05)] md:bg-transparent;
 }
 .header__link.active-link::before {
-  @apply absolute content-[""] w-[2px] h-full top-0 left-0 bg-purple;
+  @apply absolute content-[""] w-[2px] h-full top-0 left-0 bg-purple md:hidden;
 }
 .header.sticky-header {
   @apply shadow-[0_2px_12px_rgba(0,0,0,0.1)];
@@ -72,7 +72,7 @@
   @apply grid gap-8 py-8;
 }
 .testimonial__content-text {
-  @apply text-[15px] text-grey text-center leading-text sm:w-[450px] sm:justify-self-center;
+  @apply text-[15px] text-grey text-center leading-text sm:w-[450px] sm:justify-self-center md:text-[16px];
 }
 .testimonial__content-profile {
   @apply inline-flex items-center gap-3 justify-self-center;
@@ -84,7 +84,7 @@
   @apply text-[18px] text-black font-semibold mb-1;
 }
 .testimonial__content-profession {
-  @apply text-[15px] text-grey;
+  @apply text-[15px] text-grey md:text-[16px];
 }
 /* testimonial swiper */
 .swiper-pagination {
@@ -104,7 +104,7 @@
 }
 .plan__switcher-monthly,
 .plan__switcher-annual {
-  @apply py-2 px-4 text-[15px] font-medium rounded-[10rem];
+  @apply py-2 px-4 text-[15px] font-medium rounded-[10rem] md:text-[16px];
 }
 .plan__switcher-annual {
   @apply bg-black text-white;
@@ -119,10 +119,10 @@
   @apply text-[24px] text-black font-semibold mb-2;
 }
 .plan__item-text {
-  @apply text-[15px] text-grey leading-text;
+  @apply text-[15px] text-grey leading-text md:text-[16px];
 }
 .plan__item-prices {
-  @apply inline-flex items-center gap-2 mb-3 text-[15px] text-grey;
+  @apply inline-flex items-center gap-2 mb-3 text-[15px] text-grey md:text-[16px];
 }
 .plan__item-price {
   @apply text-[36px] text-black font-semibold;
@@ -131,7 +131,7 @@
   @apply flex flex-col gap-2;
 }
 .plan__item-item {
-  @apply inline-flex items-center gap-2 text-[15px] text-grey;
+  @apply inline-flex items-center gap-2 text-[15px] text-grey md:text-[16px];
 }
 .plan__item-check {
   @apply text-[1.5rem] text-purple;
@@ -154,7 +154,7 @@
   @apply overflow-hidden h-0 transition-all duration-400;
 }
 .faq__accordion-text {
-  @apply text-[15px] text-grey leading-text py-4 transition-all duration-400;
+  @apply text-[15px] text-grey leading-text py-4 transition-all duration-400 md:text-[16px];
 }
 /* accordion open */
 .faq .accordion-open .faq__accordion-title {
@@ -172,7 +172,7 @@
   @apply flex flex-col gap-2;
 }
 .footer__content-link {
-  @apply text-[15px] text-grey hover:text-purple hover:underline;
+  @apply text-[15px] text-grey hover:text-purple hover:underline md:text-[16px];
 }
 
 /* ===== SECTION SECTION ===== */

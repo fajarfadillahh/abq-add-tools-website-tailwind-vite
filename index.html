@@ -29,7 +29,7 @@
       id="header"
     >
       <div
-        class="header__container container h-24 flex justify-between items-center"
+        class="header__container container h-24 flex justify-between items-center md:relative"
       >
         <a
           href="#"
@@ -39,8 +39,13 @@
           ABQ.
         </a>
 
-        <div class="header__menu" id="header-menu">
-          <div class="header__data flex justify-between items-center ml-8 mr-6">
+        <div
+          class="header__menu md:flex md:items-center md:gap-6"
+          id="header-menu"
+        >
+          <div
+            class="header__data flex justify-between items-center ml-8 mr-6 md:hidden"
+          >
             <a
               href="#"
               class="header__logo inline-flex items-center gap-1 text-[20px] text-purple font-bold"
@@ -61,7 +66,9 @@
             </div>
           </div>
 
-          <ul class="header__list flex flex-col">
+          <ul
+            class="header__list flex flex-col md:flex-row md:gap-6 md:absolute md:translate-x-[-50%] md:left-[50%]"
+          >
             <li class="header__item">
               <a href="#" class="header__link active-link">Home</a>
             </li>
@@ -81,13 +88,13 @@
 
           <a
             href="#"
-            class="header__button button button-black self-end ml-8 mr-6"
+            class="header__button button button-black self-end ml-8 mr-6 md:ml-0 md:mr-0"
             >Register</a
           >
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-menu"></i>
@@ -317,7 +324,9 @@
             </div>
           </div>
 
-          <div class="plan__group grid justify-center gap-12">
+          <div
+            class="plan__group grid justify-center gap-12 md:grid-cols-[repeat(2,_max-content)]"
+          >
             <div class="plan__item">
               <div>
                 <h3 class="plan__item-title">For Free</h3>
@@ -586,7 +595,7 @@
               ABQ.
             </a>
             <p
-              class="footer__data-text text-[15px] text-grey leading-text mt-4"
+              class="footer__data-text text-[15px] text-grey leading-text mt-4 md:text-[16px]"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
               dignissimos quam accusamus voluptatibus.
@@ -651,7 +660,9 @@
           </div>
         </div>
 
-        <p class="footer__copy text-[15px] text-grey text-center">
+        <p
+          class="footer__copy text-[15px] text-grey text-center md:text-[16px]"
+        >
           © Copyright 2022 - all right reserved.
         </p>
       </div>
@@ -661,7 +672,7 @@
     <!-- ===== SCROLLUP SECTION ===== -->
     <a
       href="#"
-      class="scrollup fixed inline-flex right-6 bottom-12 text-[1.5rem] text-white p-2 bg-purple bg-opacity-80 transition-all duration-400 opacity-0 hover:bg-opacity-100"
+      class="scrollup fixed inline-flex right-6 bottom-12 text-[1.5rem] text-white p-2 bg-purple bg-opacity-80 transition-all duration-400 opacity-0 z-40 hover:bg-opacity-100"
       id="scroll-up"
     >
       <i class="bx bx-up-arrow-alt scrollup__icon"></i>
